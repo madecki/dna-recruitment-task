@@ -1,0 +1,10 @@
+.icon-button {
+  height: 2.5rem;
+  width: 2.5rem;
+  padding: 0.5rem;
+  border-radius: var(--border-radius-md);
+}
+
+.icon-button--secondary {
+  background-color: var(--color-neutral);
+}

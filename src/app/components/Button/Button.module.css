@@ -1,0 +1,30 @@
+.button {
+  font-size: 1rem;
+  border-radius: var(--border-radius-sm);
+  border: 0.125rem solid transparent;
+}
+
+.button--regular {
+  padding: 0.5rem 1rem;
+}
+
+.button--large {
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+}
+
+.button--primary {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+.button--secondary {
+  border: 0.125rem solid var(--color-primary);
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+.button--tertiary {
+  background-color: var(--color-tertiary);
+  color: var(--color-primary);
+}

@@ -1,0 +1,25 @@
+.navbar-wrapper {
+  box-shadow: var(--box-shadow);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.navbar-items {
+  display: flex;
+}
+
+.navbar-icons {
+  display: flex;
+  gap: 0.5rem;
+  margin-right: 0.875rem;
+}
+
+.navbar-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: 1.5rem;
+}

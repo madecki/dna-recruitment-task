@@ -1,0 +1,22 @@
+.buttonCTA {
+  width: 100%;
+  padding: 1rem;
+  border: 0.0625rem solid transparent;
+  font-size: 1rem;
+}
+
+.buttonCTA--primary {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+.buttonCTA--secondary {
+  border-color: var(--color-primary);
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+.buttonCTA--tertiary {
+  background-color: var(--color-tertiary);
+  color: var(--color-primary);
+}

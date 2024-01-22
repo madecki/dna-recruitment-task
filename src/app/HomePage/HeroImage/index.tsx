@@ -12,8 +12,9 @@ export default function HeroImage() {
             Explore a world of style and comfort
           </h1>
           <p>
-            Explore our handpicked selection of the latest men's fashion trends.
-            From classic suits to casual essentials, we have you covered.
+            Explore our handpicked selection of the latest men&apos;s fashion
+            trends. From classic suits to casual essentials, we have you
+            covered.
           </p>
           <Button variant="tertiary" label="SHOP NOW" size="large" />
         </article>

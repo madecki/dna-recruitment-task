@@ -18,6 +18,7 @@ export default async function FeaturedProducts() {
             imageSrc={product.imageSrc}
             slug={product.slug}
             isNew={product.isNew}
+            key={product.id}
           />
         ))}
       </section>

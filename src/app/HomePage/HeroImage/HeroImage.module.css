@@ -1,0 +1,23 @@
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 70vh;
+  background-image: url("https://s3-alpha-sig.figma.com/img/de7a/6de5/0351fe6fa83c981fdfc25e22a1ce745f?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QuCPVx4pixqZ5sxRRgZNoK2TQ-3P95tDXPKODFoVhx174HKFJhj2BEqwi1xQv7XCteJfPFfl0tuSyjzT7yqfqrOOT767c8-Zz30iW5zqqVl~-~bszoceEVtnr2Zz0rVQz1EUTcPyPr1SPROrLumuKa-Iv8j-Gdln4AELbj0tXyRxNMImPagVp3I3zOQX1EtAArTnj5WFbm0VSRxKHAAhoaF~QPH3G00vGnO2ePJqQru6CjmCPzv6FKIgGsrtUnumn2P5OplUOZL37XWL2Xt9HNtYGWyuGtdMkLiLSspgvCJcCc~2KD4tf~YOMe2axZmlFJOFyodgzYTjHQhKsrXCLQ__");
+  background-position: 20% 2%;
+  background-size: 154%;
+}
+
+.hero-items {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.hero-heading {
+  font-size: 3.75rem;
+  font-weight: 800;
+  line-height: 100%;
+  letter-spacing: 0.125rem;
+}

@@ -1,0 +1,21 @@
+.heading {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.gridContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gridContainer > a:nth-child(-n + 3) {
+  width: 33.33333%;
+  aspect-ratio: 1/1.7;
+}
+
+.gridContainer > a:nth-last-child(-n + 2) {
+  width: 50%;
+  aspect-ratio: 2/1;
+}

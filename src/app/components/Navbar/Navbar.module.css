@@ -1,5 +1,6 @@
 .navbar-wrapper {
   box-shadow: var(--box-shadow);
+  position: relative;
 }
 
 .navbar {

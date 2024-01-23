@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import styles from "./Navbar.module.css";
 import IconButton from "../IconButton";
 import NotificationIcon from "../IconButton/icons/Notification";
@@ -11,10 +10,10 @@ import Button from "../Button";
 
 export default function Navbar() {
   return (
-    <nav className={`${styles["navbar-wrapper"]} container`}>
+    <div className={`${styles["navbar-wrapper"]} container`}>
       <div className={styles.navbar}>
         <a href="localhost:3000">
-          <Image src="logo.svg" alt="Logo" width={94} height={35} />
+          <img src="logo.svg" alt="Logo" width={94} height={35} />
         </a>
 
         <div className={styles["navbar-items"]}>
@@ -40,6 +39,6 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-    </nav>
+    </div>
   );
 }

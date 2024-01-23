@@ -1,13 +1,11 @@
-"use client";
-
 import Button from "@/app/components/Button";
 import styles from "./HeroImage.module.css";
 
 export default function HeroImage() {
   return (
-    <section className={styles.hero}>
+    <div className={styles.hero}>
       <div className="container">
-        <article className={styles["hero-items"]}>
+        <div className={styles["hero-items"]}>
           <h1 className={styles["hero-heading"]}>
             Explore a world of style and comfort
           </h1>
@@ -17,8 +15,8 @@ export default function HeroImage() {
             covered.
           </p>
           <Button variant="tertiary" label="SHOP NOW" size="large" />
-        </article>
+        </div>
       </div>
-    </section>
+    </div>
   );
 }

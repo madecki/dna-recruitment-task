@@ -17,22 +17,24 @@ export default function ProductPreview({
 }: Props) {
   return (
     <Link href={`product/${slug}`}>
-      <article
+      <div
         className={styles.product}
         style={{ backgroundImage: `url('${imageSrc}')` }}
       >
-        <header className={styles.productHeader}>
+        <div className={styles.productHeader}>
           <div>
-            <h2 className={styles.title}>{title}</h2>
-            <strong className={styles.price}>
+            <div>
+              <span className={styles.title}>{title}</span>
+            </div>
+            <span className={styles.price}>
               {currency}
               {price}
-            </strong>
+            </span>
           </div>
 
           {isNew && <div className={styles.newIndicator}>New</div>}
-        </header>
-      </article>
+        </div>
+      </div>
     </Link>
   );
 }

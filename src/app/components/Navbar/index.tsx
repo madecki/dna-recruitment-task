@@ -14,7 +14,6 @@ export default function Navbar() {
     <nav className={`${styles["navbar-wrapper"]} container`}>
       <div className={styles.navbar}>
         <a href="localhost:3000">
-          {/* Mistake: should use domain name from env variable or extract it from URL instead of hardcoded value */}
           <Image src="logo.svg" alt="Logo" width={94} height={35} />
         </a>
 

@@ -3,6 +3,7 @@ import IconButton from ".";
 import LikeIcon from "./icons/Like";
 import NotificationIcon from "./icons/Notification";
 import ShopIcon from "./icons/Shop";
+import StarFilled from "./icons/StarFilled";
 
 const meta = {
   title: "Components/IconButton",
@@ -34,5 +35,12 @@ export const Shop: Story = {
   args: {
     variant: "secondary",
     children: <ShopIcon />,
+  },
+};
+
+export const Star: Story = {
+  args: {
+    variant: "secondary",
+    children: <StarFilled />,
   },
 };

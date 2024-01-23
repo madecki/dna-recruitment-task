@@ -29,7 +29,7 @@ export default async function handler(
 ) {
   setTimeout(() => {
     res.send(products);
-  }, 1500);
+  }, 750);
 }
 
 const products: ProductProps[] = [

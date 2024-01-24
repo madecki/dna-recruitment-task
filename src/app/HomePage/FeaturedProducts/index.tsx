@@ -1,15 +1,26 @@
+"use client";
+
 import ProductPreview from "@/app/components/ProductPreview";
 import { ProductProps } from "@/pages/api/featured-products";
 import styles from "./FeaturedProducts.module.css";
+import { useEffect, useState } from 'react';
 
-export default async function FeaturedProducts() {
-  const response = await fetch("http://localhost:3000/api/featured-products");
-  const products = (await response.json()) as ProductProps[];
+export default function FeaturedProducts() {
+  const [products, setProducts] = useState<ProductProps[]>([]);
+
+  useEffect(() => {
+    const getProducts = async (): Promise<void> => {
+      const response = await fetch("http://localhost:3000/api/featured-products");
+      setProducts(await response.json());
+    };
+
+    getProducts();
+  }, []);
 
   return (
     <div className="container">
       <h1 className={styles.heading}>Top Selling</h1>
-      <section className={styles.gridContainer}>
+      <div className={styles.gridContainer}>
         {products.map((product) => (
           <ProductPreview
             title={product.title}
@@ -21,7 +32,7 @@ export default async function FeaturedProducts() {
             key={product.id}
           />
         ))}
-      </section>
+      </div>
     </div>
   );
 }

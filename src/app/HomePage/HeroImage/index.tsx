@@ -1,3 +1,5 @@
+"use client";
+
 import Button from "@/app/components/Button";
 import styles from "./HeroImage.module.css";
 
